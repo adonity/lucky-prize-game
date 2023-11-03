@@ -1,0 +1,251 @@
+body {
+    background-image: url("../img/dekstop-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000000;
+    /* overflow-y: hidden; */
+}
+
+.bg-bg img{
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.title img{
+    width: 400px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.peti .gold-att {
+    width: 350px;
+    transform: translate(260px, -80%);
+}
+.peti .peti-att {
+    width: 700px;
+    transform: translate(0, 15%);
+}
+
+.voucher-grid {
+    z-index: 999;
+    transform: translate(0, 12%);
+}
+h1 {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    text-shadow: 4px 4px 5px #000000, 2px 2px 40px #000000;
+}
+
+.form input {
+    text-align: center;
+    width: 75%;
+    height: 40px;
+    border-radius: 25px;
+    border: 0px;
+    letter-spacing: 2.5px;
+
+    font-weight: bold;
+    font-size: 22px;
+    box-shadow: 5px 5px 7px #000000;
+}
+
+.submit button {
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: 2px 5px 7px #000000;
+    background: linear-gradient(to bottom,#ffd563 16%,#daa81f 44%,#ecad00 99%);
+    font-weight: bolder;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+.submit button:hover {
+    background: linear-gradient(to bottom,#ffd563 16%,#e6b83c 44%,#f0bc2f 99%);
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px) scale(1.05) skew(2deg, 4deg);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@media screen and (max-width:1629px) {
+    .title img{
+        width: 250px;
+    }
+
+    .peti .gold-att {
+        width: 230px;
+        transform: translate(230px, -83%);
+    }
+    .peti .peti-att {
+        width: 550px;
+        transform: translate(0, 15%);
+    }
+
+    .voucher-grid {
+        z-index: 999;
+        transform: translate(0, 12%);
+    }
+    h1 {
+        padding-top: 80px;
+        font-size: 1.6rem;
+    }
+
+    .form input {
+        width: 70%;
+        height: 40px;
+    }
+
+    .submit button {
+        width: 200px;
+        height: 40px;
+    }
+
+}
+
+@media screen and (max-width:1400px) {
+    .title img{
+        width: 350px;
+    }
+
+    .peti .gold-att {
+        width: 280px;
+        transform: translate(250px, -85%);
+    }
+    .peti .peti-att {
+        width: 600px;
+        transform: translate(0, 15%);
+    }
+
+    .voucher-grid {
+        z-index: 999;
+        transform: translate(0, 12%);
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .form input {
+        width: 70%;
+        height: 40px;
+    }
+
+    .submit button {
+        width: 200px;
+        height: 40px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .title img{
+        width: 250px;
+    }
+
+    .peti .gold-att {
+        width: 200px;
+        transform: translate(220px, -85%);
+    }
+    .peti .peti-att {
+        width: 450px;
+        transform: translate(0, 15%);
+    }
+
+    .voucher-grid {
+        z-index: 999;
+        transform: translate(0, 12%);
+    }
+    h1 {
+        font-size: 1rem;
+    }
+
+    .form input {
+        width: 70%;
+        height: 40px;
+    }
+
+    .submit button {
+        width: 200px;
+        height: 40px;
+    }
+
+}
+@media screen and (max-width:768px) {
+    .bg-bg img {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        /* Preserve aspet ratio */
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .peti .hidden {
+        display: block;
+        width: 100%;
+        position: absolute;
+        padding-left: 90px;
+        padding-right: 90px;
+        animation: float 6s ease-in-out infinite;
+        margin-top: 90px;
+        margin-left: -10px;
+        z-index: 999;
+    }
+
+    .title img{
+        display: none;
+        width: 250px;
+    }
+
+    .peti .gold-att {
+        display: none;
+    }
+    .peti .peti-att {
+        width: 100%;
+        transform: translate(0, 45%);
+    }
+
+    .voucher-grid {
+        z-index: 999;
+        transform: translate(0, 96%);
+    }
+    h1 {
+        padding-top: 20px;
+        font-size: 1.3rem;
+    }
+
+    .form input {
+        width: 80%;
+        height: 40px;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: red;
+        opacity: 1; /* Firefox */
+      }
+
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: red;
+      }
+
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: red;
+      }
+
+    .submit button {
+        width: 200px;
+        height: 40px;
+    }
+
+}
