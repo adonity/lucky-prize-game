@@ -1,0 +1,301 @@
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: "Slackey";
+  background-image: url(../img/dekstop-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cover {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/peti_ya.png);
+  background-size: 680px, 500px;
+  background-repeat: no-repeat;
+  background-position: 60px;
+  width: 800px;
+  height: 1800px;
+}
+
+#viewport {
+  /* background-color: #cdcdcd; */
+  /* background-image: -moz-linear-gradient(#1f0000, #110000, #110000, #110000, #1f0000);
+  background-image: -webkit-linear-gradient(#1f0000, #110000, #110000, #110000, #1f0000); */
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#viewport.mobile {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#viewport.tablet {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#viewport.desktop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+#container {
+  position: absolute;
+  width: 390px;
+  height: 340px;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -20%);
+}
+#container h1 {
+  font-size: large;
+  text-align: center;
+  color: white;
+}
+#container #header {
+  text-align: center;
+}
+#container #header h3 {
+  margin-top: 10px;
+  text-align: center;
+  font: 20px Slackey;
+  padding: 5px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#fffafa, #fffafa, #ff9925);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#container #header h3 {
+  color: #d4401b;
+  padding-bottom: 10px;
+}
+
+/* #container #buttons .button{
+margin-bottom: -15px;
+} */
+#container #buttons #play {
+  position: absolute;
+  bottom: -150px;
+  left: 30px;
+  right: 30px;
+  text-align: center;
+  height: 45px;
+  line-height: 40px;
+  font-size: 24px;
+  border-radius: 10px;
+  background-size: auto 62px;
+}
+
+#container #reels {
+  margin-top: 10.5px;
+  margin-left: -13px;
+  border-radius: 12px;
+  display: block;
+  position: relative;
+  height: 227px;
+  width: 387px;
+  overflow: hidden;
+  text-align: center;
+  background: #240404;
+  border: thick double #fdc751;
+  -moz-box-shadow: #4f0101 0px 1px 0px;
+}
+#container #reels canvas {
+  margin-top: 5px;
+  width: 110px;
+  position: relative;
+  /* background: white; */
+  /* border: 1px solid #fdc751; */
+}
+
+.select {
+  position: absolute;
+  z-index: 1;
+  background-color: #fc71304f;
+  border-top: 2px solid #ffd000;
+  border-bottom: 2px solid #ffd000;
+  width: 100%;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  margin-top: -7px;
+
+}
+
+#container #overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  opacity: 0.3;
+  background-image: -moz-linear-gradient(#555, #fff, #fff, #555);
+  background-image: -webkit-gradient(
+    linear,
+    0 25%,
+    0 100%,
+    from(grey),
+    color-stop(0.5, white),
+    to(grey)
+  );
+  display: none;
+}
+#container #overlay #winline {
+  width: 100%;
+  height: 5px;
+  background: red;
+  position: relative;
+  top: 50%;
+}
+#reels #results {
+  display: none;
+  background: #161615cb;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 3px solid gold;
+  height: 120px;
+  width: 400px;
+  font-size: x-large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+#results #score {
+  margin: 5px;
+}
+
+#results #score img {
+  vertical-align: middle;
+}
+
+.button {
+  border-radius: 30px;
+  color: #fff;
+
+}
+.button.button-default {
+  background: linear-gradient(to bottom,#ffbf49 16%,#b18906 44%,#7e4e06 99%);
+  border-radius: 30px;
+}
+.button.button-default:hover {
+  background-image: -moz-linear-gradient(#ae0b0e, #660709);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ae0b0e),
+    to(#660709)
+  );
+  cursor: pointer;
+}
+.button.button-default:active {
+  background-image: -moz-linear-gradient(#d81114, #960c0f);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#d81114),
+    to(#960c0f)
+  );
+}
+
+.logo {
+  width: 650px;
+}
+
+#status {
+  font-weight: bold;
+  color: red;
+  font-size: 24px;
+}
+#status h3 {
+  color: rgb(255, 255, 255);
+}
+#status {
+  text-align: center;
+  margin: auto;
+}
+#status h3 span {
+  font-weight: bold;
+  color: #ffd310;
+  line-height: 50px;
+  font-size: 34px;
+}
+
+.submit button {
+  width: 250px;
+  height: 40px;
+  border-radius: 30px;
+  box-shadow: 2px 5px 7px #000000;
+  color: white;
+  background: linear-gradient(to bottom,#ff6363 16%,#da1f1f 44%,#ec0000 99%);
+  font-weight: bolder;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+.submit button:hover {
+  background: linear-gradient(to bottom,#f87171 16%,#df3131 44%,#ee1515 99%);
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    margin-top: 50px;
+    width: 350px;
+  }
+
+  .cover {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/peti_ya.png);
+    background-size: 496px, 380px;
+    background-repeat: no-repeat;
+    background-position: 160px;
+  }
+
+  #container #reels {
+    margin-top: 15px;
+    margin-left: 26px;
+    border-radius: 8px;
+    display: block;
+    position: relative;
+    height: 200px;
+    width: 330px;
+    overflow: hidden;
+    text-align: center;
+    background: #240404;
+    border: thick double #fdc751;
+    -moz-box-shadow: #4f0101 0px 1px 0px;
+  }
+
+  #container #reels canvas {
+    margin-top: 0px;
+    width: 100px;
+    position: relative;
+    /* background: white; */
+    /* border: 1px solid #fdc751; */
+  }
+
+  #container #header h1 {
+    font: 26px Slackey;
+    font-weight: bold;
+  }
+
+  #container #buttons #play {
+    bottom: -50px;
+  }
+}
